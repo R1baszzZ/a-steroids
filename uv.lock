@@ -2,6 +2,17 @@ version = 1
 revision = 3
 requires-python = ">=3.13"
 
+[manifest]
+members = [
+    "a-steroids",
+    "asteroids",
+]
+
+[[package]]
+name = "a-steroids"
+version = "0.1.0"
+source = { virtual = "a-steroids" }
+
 [[package]]
 name = "asteroids"
 version = "0.1.0"
