@@ -1,4 +1,8 @@
-
+import pygame
 
 SCREEN_WIDTH = 1280
 SCREEN_HEIGHT = 720
+PLAYER_RADIUS = 20
+LINE_WIDTH = 2
+TURN_PLAYER_SPEED = 300
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
