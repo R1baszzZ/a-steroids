@@ -11,9 +11,10 @@ def main():
     pygame.init()
     clock = pygame.time.Clock()
     dt = 0
+    updatable = pygame.sprite.Group()
+    drawable = pygame.sprite.Group()
+    Player.containers = (updatable, drawable)
     player = Player(x=SCREEN_WIDTH/2, y=SCREEN_HEIGHT/2)
-    updatable = [player]
-    drawable = [player]
     while True:
         log_state()
         for event in pygame.event.get():
