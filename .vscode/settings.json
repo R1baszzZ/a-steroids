@@ -1,0 +1,8 @@
+{
+  "editor.inlineSuggest.enabled": false,
+  "editor.snippetSuggestions": "none",
+  "editor.wordBasedSuggestions": "currentDocument",
+  "editor.suggest.showWords": true,
+  "editor.quickSuggestions": true,
+  "editor.suggestOnTriggerCharacters": true
+}
