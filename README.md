@@ -29,7 +29,7 @@ If you want to change anything, go for it — **PRs and suggestions are welcome*
 Thanks for checking it out. If you’re also learning, you’re not alone. Let’s level up together. ✨
 
 Extending the Project
-You've done all the required steps, but if you'd like to make the game your own, here are some ideas:
+here are some ideas:
 
 Add a scoring system
 Implement multiple lives and respawning
