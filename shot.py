@@ -1,12 +1,14 @@
 from constants import *
 from circleshape import *
 
+
+
 class Shot(CircleShape):
-    def __init__(self,x , y, radius):
-        super().__init_(x,y,radius)
+    containers = ()
+    def __init__(self, x, y):
+        super().__init__(x, y, SHOT_RADIUS)
         self.x = x
         self.y = y
-        self.radius = radius
     
     def draw(self, screen):
         pygame.draw.circle(screen, "white", self.position, self.radius, LINE_WIDTH)
