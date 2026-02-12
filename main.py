@@ -30,6 +30,7 @@ def main():
     # instantiated the objs
     player = Player(x=SCREEN_WIDTH/2, y=SCREEN_HEIGHT/2)
     asteroidfield = AsteroidField()
+   
     # this is the loop that the magic of the game happens
     while True:
         # im keeping logs to troubleshoot easier
@@ -50,6 +51,11 @@ def main():
                 log_event("player_hit")
                 print("Game over!")
                 sys.exit()
+            for shot in shots:
+                if obj.collides_with(shot):
+                    log_event("asteroid_shot")
+                    obj.split()
+                    shot.kill()
         for obj in drawable:
             obj.draw(screen)
 
